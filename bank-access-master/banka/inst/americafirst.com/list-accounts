@@ -1,0 +1,6 @@
+#!/bin/bash
+# Copyright (c) The SimpleFIN Team
+# See LICENSE for details.
+set -e
+DAYS=${1:-30}
+../../util/ofxdownloader.py --info-file=info.yml --days=$DAYS
